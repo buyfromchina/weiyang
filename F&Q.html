@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>WEIYANG</title>
+    <link rel="stylesheet" href="./css/dist.css" />
+    <style>
+       #menu-toggle:checked + #menu{
+        display: block;
+      }
+
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="bg-white shadow aria-activedescendant">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16">
+            <div class="flex">
+              <div aria-expanded="false" class="-ml-2 mr-2 flex items-center md:hidden" id="menu">
+                <!-- Mobile menu button -->
+                <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" >
+                  <span class="sr-only">Open main menu</span>
+                  <!-- Icon when menu is closed. -->
+                  <!--
+                    Heroicon name: menu
+      
+                    Menu open: "hidden", Menu closed: "block"
+                  -->
+                  <svg  class="block h-6 w-6" xmlns="./logo.png" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                
+                  <!-- Icon when menu is open. -->
+                  <!--
+                    Heroicon name: x
+      
+                    Menu open: "block", Menu closed: "hidden"
+                  -->
+                  <svg class="hidden h-6 w-6" xmlns="./logo.png" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div class="flex-shrink-0 flex items-center">
+                <a href="./index.html"><img class="block lg:hidden h-8 w-auto" src="./photo/logo.png" alt="WEIYANG"></a>
+                <a href="./index.html"><img class="hidden lg:block h-8 w-auto" src="./photo/logo.png" alt="WEIYANG"></a>
+              </div>
+              <div class="hidden md:ml-6 md:flex md:space-x-8" id="menu">
+                <a href="./index.html" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-900">
+                  À Propos
+                </a>
+                <a href="./service.html" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                  Service & Tarif
+                </a>
+                
+                <a href="F&Q.html" class="inline-flex items-center px-1 pt-1 border-b-2 border-indigo-500 text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                  F&Q
+                </a>
+                <a href="./production.html" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                  Production
+                </a>
+                <a href="./contact.html" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                  Contact
+                </a>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <p class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-bg font-medium text-black">
+                <svg class="-ml-0.5 mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                info@weiyang.pro</p>
+              </div>
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <button type="button" class="relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                  <span><a href="./F&Q-en.html">EN</a></span>
+                </button>
+                <button type="button" class="relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                  <span><a href="./F&Q-ru.html">RU</a></span>
+                </button>
+              </div>
+            
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!--
+          Mobile menu, toggle classes based on menu state.
+      
+          Menu open: "hidden", Menu closed: "hidden"
+        -->
+        <div class="hidden md:hidden">
+          <div class="pt-2 pb-3 space-y-1">
+            <a href="./index.html" classname="block pl-3 pr-4 py-2 border-l-4 border-indigo-500 text-base font-medium text-indigo-700 bg-indigo-50 sm:pl-5 sm:pr-6">À Propos</a>
+            <a href="./service.html" classname="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 sm:pl-5 sm:pr-6">Service & Tarif</a>
+            <a href="./F&Q.html" classname="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 sm:pl-5 sm:pr-6">F&Q</a>
+            <a href="./production.html" classname="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 sm:pl-5 sm:pr-6">Production</a>
+            <a href="./contact.html" classname="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 sm:pl-5 sm:pr-6">Contact</a>
+          </div>
+          </div>
+        </div>
+      </nav>
+        </header>
+  <main>
+    <div class="bg-white">
+      <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+          <div>
+            <h2 class="text-3xl font-extrabold text-gray-900">
+              Les questions posées frequents
+            </h2>
+            <p class="mt-4 text-lg text-gray-500">Il n'y a pas de reponse pour votre question?<a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> Écriez-Moi</a>!</p>
+          </div>
+          
+          <div class="mt-12 lg:mt-0 lg:col-span-2">
+            <dl class="space-y-12">
+              <div>
+                <dt class="text-lg leading-6 font-medium text-gray-900">
+                  <button class="text-left w-full flex justify-between items-start text-gray-400">
+                    <span class="font-medium text-gray-900">
+                      Condition et scheme de collaboration
+                    </span>
+                    <span class="ml-6 h-7 flex items-center">
+                      <!--
+                        Heroicon name: chevron-down
+      
+                        Open: "-rotate-180", Closed: "rotate-0"
+                      -->
+                      <svg class=" h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd class="mt-2 text-base text-gray-500">
+                  <p class="text-base text-gray-500">
+                    Notre compagnie offre les service azimut durant une activité des transactions, y compris interprète, la recherche et l’achat des marchandises, livraison, voyage d’affaire.</p>
+                    <li class="text-base text-gray-500">Interprète à partir de 100$</li>
+                    <li class="text-base text-gray-500">La recherche des marchandises à partir de 100$</li>
+                    <li class="text-base text-gray-500">L’achat des marchandises - 10% de montant total sans livraison, commission minima 80$, téléchargez <a href="./price&production/Bilan.xlsx" class="text-indigo-600">Bilan</a></li>
+                    <li class="text-base text-gray-500">voyage d’affaire - 15% de montant total</li>
+                  <p class="text-base text-gray-500"> Après la signature du contrat, 50% d'acompte pour l'assurance à l’affaire suivant. En cas de forfait, l’acompte payé pour notre travail et le temps dépensant.
+                    <br>À l’achat des merchandises, 100% d’acompte. En 48 heures après la réception de somme l’achat se met à débuter</p>                    
+                </dd>
+              </div>
+              <div class="mt-12 lg:mt-0 lg:col-span-2">
+                <dl class="space-y-12">
+                  <div>
+                    <dt class="text-lg leading-6 font-medium text-gray-900">
+                      <button class="text-left w-full flex justify-between items-start text-gray-400">
+                        <span class="font-medium text-gray-900">
+                          Le processus d’achat
+                        </span>
+                        <span class="ml-6 h-7 flex items-center">
+                          <!--
+                            Heroicon name: chevron-down
+          
+                            Open: "-rotate-180", Closed: "rotate-0"
+                          -->
+                          <svg class=" h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </span>
+                      </button>
+                    </dt>
+                    <dd class=" mt-2 text-base text-gray-500">
+                      <li class="text-base text-gray-500">
+                        La reception de la demande ou du formulaire d’enquête avec des lignes;
+                      </li>
+                      <li class="text-base text-gray-500">
+                        Régler conformément au devis;
+                        </li>
+                        <li class="text-base text-gray-500">
+                          L’achat des merchandises; 
+                          </li>
+                          <li class="text-base text-gray-500">
+                            Photo des merchandises;
+                            </li>
+                            <li class="text-base text-gray-500">
+                              Rassemblement , emballage et embarquement;
+                              </li>
+                              <li class="text-base text-gray-500">
+                                Le paiement de livraison de la Chine en France;
+                                </li>
+                                <li class="text-base text-gray-500">
+                                  Livraison des merchandises.
+                                  </li>
+                    </dd>
+                  </div> 
+                  <div class="mt-12 lg:mt-0 lg:col-span-2">
+                    <dl class="space-y-12">
+                      <div>
+                        <dt class="text-lg leading-6 font-medium text-gray-900">
+                          <button class="text-left w-full flex justify-between items-start text-gray-400">
+                            <span class="font-medium text-gray-900">
+                              Garantie et type de livraison
+                            </span>
+                            <span class="ml-6 h-7 flex items-center">
+                              <!--
+                                Heroicon name: chevron-down
+              
+                                Open: "-rotate-180", Closed: "rotate-0"
+                              -->
+                              <svg class=" h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                              </svg>
+                            </span>
+                          </button>
+                        </dt>
+                        <dd class=" mt-2 text-base text-gray-500">
+                          <p class="transition-transform hover:-rotate-180 text-base text-gray-500">
+                            Notre compagnie collabore avec des fiables transporteurs, nous donc pouvons garantir la qualité du service. Chacun marchandise couvre par l’assurance, en cas de retard, pillage, confiscation, compagnie logistique rend le coût de merchandise assuré .
+                            <br> Après rassemblement de merchandises, nous pouvons les livrer à Paris via le transport aérien 9-12 jours, via le train 14-20 jours.
+                            <br>Le coût à partir de 8$/kg + assurance + emballage, contacter pour plus d’information.
+                            <br>Ensuite de Paris aux toutes les villes Européennes via les livraisons correspondants comme La Poste. Vous payez le frais d’après le reçu réel au moment où vous recevez les merchandises.
+                            <br>*Il faut savoir que l’assurance ne couvre pas en cas de bris, plissement, ouverture etc.</p>
+                        </dd>
+                      </div>
+                  <div class="mt-12 lg:mt-0 lg:col-span-2">
+                    <dl class="space-y-12">
+                      <div>
+                        <dt class="text-lg leading-6 font-medium text-gray-900">
+                          <button class="text-left w-full flex justify-between items-start text-gray-400">
+                            <span class="font-medium text-gray-900">
+                              À paiement
+                            </span>
+                            <span class="ml-6 h-7 flex items-center">
+                              <!--
+                                Heroicon name: chevron-down
+              
+                                Open: "-rotate-180", Closed: "rotate-0"
+                              -->
+                              <svg class=" h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                              </svg>
+                            </span>
+                          </button>
+                        </dt>
+                        <dd class=" mt-2 text-base text-gray-500">
+                          <p class="transition-transform hover:-rotate-180 text-base text-gray-500">
+                            Nous offrons des paiements divers afin que chacun puisse accomplir son affaire rentable.
+                           <br> En cas de montant supérieur à 15000$, nous pouvons travailler en tant que personne morale, effectuer un virement via le compte officiel.
+                            <br>Pour le petit montant, nous travaillons en tant que personne physique, le payment est accepté par carte bancaire ou Western Union.   
+                        </p>
+                        </dd>
+                      </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </main>
+</body>
+<footer> 
+  <div class="text-center text-sm font-medium text-gray-700">
+    <p>Lundi à Vendredi 9:00-18:00</p>
+    <p> &copy; 2016-2021 WEIYANG Interprète & Trading Service.</p>
+  </div>  
+</footer>
+</html>
